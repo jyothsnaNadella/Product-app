@@ -1,12 +1,12 @@
-# Product-app
-# Clone : git clone
-# Open sln project file and publish it to seperate folder
-# Install nuget packages if any package is not already installed
-# Deploy the files in IIS and give folder permissions
-# Change the database connection string in the config
-# Make database changes as below
- ## Create Database Inventory
- ## Create Table 
+ ### Product-app
+ ### Clone : git clone
+ ### Open sln project file and publish it to seperate folder
+ ### Install nuget packages if any package is not already installed
+ ### Deploy the files in IIS and give folder permissions
+ ### Change the database connection string in the config
+ ### Make database changes as below
+  ### Create Database Inventory
+  ### Create Table 
          USE [Inventory]
         GO
 
@@ -30,7 +30,7 @@
         GO
 
 
- ## Create stored procedure
+ ### Create stored procedure
        USE [Inventory]
       GO
 
@@ -51,5 +51,5 @@
        Values (@Name, @Description, @Price)  
       End
       GO
-# Run the application in the iis and create the products and view the products
+ ### Run the application in the iis and create the products and view the products
 
