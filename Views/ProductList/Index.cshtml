@@ -1,0 +1,22 @@
+﻿@model IEnumerable<ProductsProject.Models.Products>
+
+@using ProductsProject.Models;
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div>
+    <h2>Product List</h2>
+    <ul>
+        @foreach (Products product in @Model)
+        {
+            <li>
+                @Html.ActionLink(product.ProductName, "Details", new { @id = product.ProductId })
+            </li>
+
+        }
+    </ul>
+
+    @Html.ActionLink("Create Product","Create")
+</div>

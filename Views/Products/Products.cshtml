@@ -1,0 +1,29 @@
+﻿@model ProductsProject.Models.Products
+
+@{
+    ViewBag.Title = "Products";
+}
+
+<h2>Products</h2>
+@*<ul>   
+    @foreach(string strproduct in ViewBag.Products)
+    {
+        <li>@ strproduct</li>
+    }
+</ul>*@
+ 
+<table>
+    <tr>
+        <td><b>Name</b></td>
+        <td>@Model.ProductName</td>
+    </tr>
+    <tr>
+        <td><b>Price</b></td>
+        <td>@Model.Price</td>
+    </tr>
+    <tr>
+        <td><b>Description</b></td>
+        <td>@Model.Description</td>
+    </tr>
+</table>
+@Html.ActionLink("BacktoList", "ProductList");

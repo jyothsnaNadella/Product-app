@@ -1,0 +1,24 @@
+﻿@model ProductsProject.Models.Products
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<table>
+    <tr>
+        <td><b>Name</b></td>
+        <td>@Model.ProductName</td>
+    </tr>
+    <tr>
+        <td><b>Price</b></td>
+        <td>@Model.Price</td>
+    </tr>
+    <tr>
+        <td><b>Description </b></td>
+        <td>@Model.Description</td>
+    </tr>
+</table>
+@Html.ActionLink("BacktoList", "Index");
+
